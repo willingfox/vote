@@ -1,0 +1,11 @@
+/**app.wxss**/
+
+.container {
+  height:100%;
+}
+
+page {
+  background-color: #F2F2F3;
+  font-size: 30rpx;
+  height:100%;
+}

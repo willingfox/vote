@@ -1,0 +1,33 @@
+/* pages/scanPay/scanPay.wxss */
+.wrap{margin: 30rpx;margin-bottom: 0;background: #fff;}
+
+.mer_info {
+  margin-top: 62rpx;
+}
+
+.mer_info .mer_logo{height: 122rpx;width: 122rpx;display: block;border-radius: 50%;border: 1px solid #e6e6e6;}
+
+.pay_money{width: 100%;padding: 60rpx 60rpx 0;box-sizing: border-box;}
+
+.pay_money .pay_tip{font: 28rpx/28rpx "";font-weight: bold;margin-bottom: 30rpx;display: block;}
+
+.pay_money .pay_input{border-bottom: 1px solid #e6e6e6;padding-bottom:20rpx;display: flex; }
+
+.pay_money .pay_input text{font-size: 54rpx;font-weight: bold;padding-right:18rpx;padding-top: 20rpx; box-sizing: border-box;}
+
+.pay_money .pay_input input{color: #000;font-size:70rpx;line-height: 100rpx;height: 100rpx;}
+
+.pay{width:570rpx;height: 88rpx;margin-top: 60rpx;text-align: center;margin-bottom: 80rpx;line-height: 88rpx;border-radius: 4px;}
+
+button{color:#fff;}
+
+button:after{border: none;}
+
+button[disabled][type="default"], wx-button[disabled]:not([type]) {
+  color:rgba(255, 255, 255, 1);
+  background-color:#ff9eaa;
+}
+.button-hover{
+  background:rgba(232, 67, 78, 0.8) !important;
+  color:#fff;
+}

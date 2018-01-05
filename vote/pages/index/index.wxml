@@ -1,0 +1,64 @@
+<!--detail.wxml-->
+<view class="container">
+  <view wx:if="{{voteDetail.Type}}">
+    <view class="voted" bindtap="toDetail()" wx:if="{{voteDetail.IsVote}}">
+      <view class="user">
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <text class="name">{{userInfo.nickName}}</text>
+        <view class="status">
+        <text>进行中</text>
+        </view>
+      </view>
+      <view class="title">{{voteDetail.Name}}</view>
+      <view class="pre_view">
+        <text wx:if="{{voteDetail.Type == 1}}">单选</text>
+        <text wx:if="{{voteDetail.Type == 2}}">多选</text>
+        <text class="num">共{{voteDetail.sum}}票</text>
+      </view>
+      <view class="option">
+        <view class="option_item" wx:for="{{voteDetail.Option}}">
+          <span>{{item.Content}}</span>
+          <span class="num">{{item.NumOfVotes}}票</span>
+        </view>
+      </view>
+      <view class="vote_to">
+      <image src="{{userInfo.avatarUrl}}"></image>
+      已投票
+      </view>
+    </view>
+    <view class="voted" wx:if="{{!voteDetail.IsVote}}">
+      <view class="user">
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <text class="name">{{userInfo.nickName}}</text>
+        <view class="status">
+        <text>进行中</text>
+        </view>
+      </view>
+      <view class="title">{{voteDetail.Name}}</view>
+      <view class="pre_view">
+        <text wx:if="{{voteDetail.Type == 1}}">单选</text>
+        <text wx:if="{{voteDetail.Type == 2}}">多选</text>
+      </view>
+      <view class="option">
+        <view class="option_item">
+          <radio-group class="radio-group" bindchange="radioChange" wx:if="{{voteDetail.Type == 1}}">
+            <label class="radio" wx:for="{{voteDetail.Option}}">
+              <radio value="{{item.Id}}" checked="{{index == 0}}"/>{{item.Content}}
+            </label>
+          </radio-group>
+          <checkbox-group bindchange="checkboxChange" wx:if="{{voteDetail.Type == 2}}">
+            <label class="checkbox" wx:for="{{voteDetail.Option}}">
+              <checkbox value="{{item.Id}}" checked="{{item.checked}}"/>{{item.Content}}
+            </label>
+          </checkbox-group>
+        </view>
+      </view>
+      <view class="to_vote">
+        <button class="vote" bindtap="createVote">投票</button>
+      </view>
+    </view>
+  </view>
+  <view class="add_vote">
+    <button bindtap="addVote">创建投票</button>
+  </view>
+</view>

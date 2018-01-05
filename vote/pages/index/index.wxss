@@ -1,0 +1,103 @@
+/* pages/detail/detail.wxss */
+.voted{
+  background:#fff;
+}
+.voted .user{
+  padding:20rpx 0 10rpx 20rpx;
+  position:relative;
+}
+.voted .user .status{
+  position:absolute;
+  right:0;
+  top:0;
+  padding:5rpx 10rpx;
+  background:#FE9C6D;
+  color:#fff !important;
+  font-size:26rpx;
+}
+.voted .user image{
+  height:50rpx;
+  width:50rpx;
+  border-radius:50%;
+  vertical-align:middle;
+}
+.voted .user .name{
+  display:inline-block;
+  vertical-align:middle;
+  color:#2B88E4;
+  margin-left:12rpx;
+}
+.voted .title{
+  padding-left:20rpx;
+  margin:10rpx 0;
+}
+.voted .pre_view{
+  padding:5rpx 0 10rpx 20rpx;
+  color:#ccc;
+  font-size:26rpx;
+  position:relative;
+}
+.voted .pre_view .num{
+  position:absolute;
+  right:20rpx;
+}
+.voted .option{
+}
+.voted .option .option_item{
+  background:#FaFaFa;
+  margin-bottom:2rpx;
+  line-height:50rpx;
+  padding-left:20rpx;
+  position:relative;
+}
+.voted .option .option_item label{
+  display:block;
+  margin-bottom:2rpx;
+  background:#FaFaFa;
+}
+.voted .option .option_item radio-group{
+  background:#fff;
+}
+.voted .option .option_item checkbox-group{
+  background:#fff;
+}
+.voted .option .option_item .num{
+  position:absolute;
+  right:20rpx;
+  top:0;
+}
+.voted .vote_to{
+  line-height:70rpx;
+  padding-left:20rpx;
+  font-size:28rpx;
+  border-bottom:1px solid #ddd;
+}
+.voted .vote_to image{
+  height:40rpx;
+  width:40rpx;
+  border-radius:50%;
+  vertical-align:middle;
+}
+.voted .to_vote{
+  margin-top:30rpx;
+  padding-bottom:30rpx;
+  width:80%;
+  margin-left:10%;
+  box-size:border-box;
+}
+.voted .to_vote button{
+  background:#44B0EC;
+  color:#fff;
+  font-size:32rpx;
+}
+.add_vote{
+  position:fixed;
+  bottom:30rpx;
+  width:80%;
+  left:10%;
+}
+.add_vote button{
+  background:#44B0EC;
+  color:#fff;
+  font-size:32rpx;
+}

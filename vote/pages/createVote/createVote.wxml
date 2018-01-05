@@ -1,0 +1,26 @@
+<!--detail.wxml-->
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+      <textarea  placeholder="输入投票主题" class="name" bindinput="bindNameInput" value="{{name}}"/>
+    </view>
+    <view class="section section_gap">
+      <view class="option" wx:for="{{option}}">
+        <span class="sub" wx:if="{{index>1}}" bindtap="subOption" data-index="{{index}}">-</span>
+        <input placeholder="选项{{index+1}}" bindinput="bindOptionInput" value="{{item.content}}" data-index="{{index}}" />
+      </view>
+      <view class="option" bindtap="addOption"><span class="add">+</span>添加选项</view>
+    </view>
+    <view class="section section_gap item item1">
+      <view class="section__title">投票类型:</view>
+      <radio-group name="radio-group" class="form_item" bindchange="radioChange">
+        <label><radio value="1" name="type" checked="{{type == 1}}"/>单选</label>
+        <label><radio value="2" name="type" checked="{{type == 2}}"/>多选</label>
+      </radio-group>
+    </view>
+    <view class="btn-area">
+      <button  class="btn btn1" bindtap="save">发布</button>
+      <button  class="btn btn2" bindtap="reset">取消</button>
+    </view>
+  </form>
+</view>

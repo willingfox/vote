@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container wrap">
+  <view class="mer_info">
+    <image class="mer_logo" src="{{mer_logo}}"></image>
+  </view>
+   <view class="pay_money">
+    <text class="pay_tip">支付金额</text>
+    <view class="pay_input">
+      <text>¥</text>
+      <input type="digit" confirm-type="done" auto-focus bindinput="bindKeyInput" maxlength="4"/>
+    </view>
+  </view>
+  <button class="pay" disabled="{{disabled}}" bindtap="toPay" style="background:{{inputStyle}}">立即支付</button>
+</view>

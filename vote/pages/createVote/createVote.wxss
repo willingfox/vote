@@ -1,0 +1,90 @@
+/* pages/detail/detail.wxss */
+.container{
+  padding-top:20rpx;
+  box-sizing:border-box;
+}
+.name{
+  background:#fff;
+  height:130rpx;
+  margin-bottom:20rpx;
+  width:100%;
+  padding-left:15rpx;
+  box-sizing:border-box;
+}
+.option{
+  height:70rpx;
+  line-height:70rpx;
+  background:#fff;
+  padding-left:50rpx;
+  position:relative;
+}
+.option input{
+  border-bottom:1rpx solid #ddd;
+  height:70rpx;
+  min-height:0;
+  line-height:70rpx;
+  box-sizing:border-box;
+}
+.option .add{
+  position:absolute;
+  left:10rpx;
+  top:20rpx;
+  height:30rpx;
+  line-height:30rpx;
+  width:30rpx;
+  border-radius:50%;
+  background:#44B0EC;
+  text-align:center;
+  color:#fff;
+}
+.option .sub{
+  position:absolute;
+  left:10rpx;
+  top:20rpx;
+  height:30rpx;
+  line-height:30rpx;
+  width:30rpx;
+  border-radius:50%;
+  background:red;
+  text-align:center;
+  color:#fff;
+}
+.item1{
+  margin-top:30rpx;
+}
+.item{
+  background:#fff;
+  height:70rpx;
+  line-height:70rpx;
+  border-bottom:1px solid #ddd;
+  display:flex;
+}
+.form_item{
+  flex:1;
+}
+.form_item label{
+  height:100%;
+  margin-right:10rpx;
+  display:inline-block;
+}
+.section__title{
+  display:inline-block;
+  width:160rpx;
+  padding-left:15rpx;
+}
+.btn-area{
+  margin-top:50rpx;
+  text-align:center;
+}
+.btn-area button{
+  display:inline-block;
+  padding:40rpx 60rpx;
+  line-height:0;
+}
+.btn-area .btn1{
+  background:#44B0EC;
+  margin-right:15px;
+}
+.btn-area .btn2{
+  background:#fff;
+}
